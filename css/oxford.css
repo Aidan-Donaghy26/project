@@ -1,0 +1,18 @@
+/* oxford.css - styles only for oxford.html (table) */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.5rem;
+    text-align: left;
+    border: 1px solid var(--dark);
+}
+
+th {
+    background-color: var(--dark);
+    color: var(--cream);
+}

@@ -1,0 +1,19 @@
+/* home.css - styles only for index.html (form styling) */
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem;
+    font: inherit;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font: inherit;
+}

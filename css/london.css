@@ -1,0 +1,11 @@
+/* london.css - styles only for london.html (flexbox) */
+
+.stops {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.stops section {
+    flex: 1 1 250px;
+}

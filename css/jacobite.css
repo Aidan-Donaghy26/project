@@ -1,0 +1,14 @@
+/* jacobite.css - styles only for jacobite.html (ordered list) */
+
+main ol {
+    padding-left: 2rem;
+}
+
+main li {
+    margin-bottom: 0.5rem;
+}
+
+main li::marker {
+    font-weight: bold;
+    color: var(--rust);
+}
