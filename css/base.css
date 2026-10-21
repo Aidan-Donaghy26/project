@@ -1,0 +1,107 @@
+/* base.css - shared styles used by ALL pages */
+
+/* Colors (fall palette) */
+:root {
+    --dark: #2b1d14;
+    --rust: #8c3b1b;
+    --cream: #f6ecd9;
+}
+
+/* Body font and page colors */
+body {
+    margin: 0;
+    font-family: "IM Fell English", serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: var(--cream);
+    color: var(--dark);
+}
+
+/* Heading font */
+h1,
+h2 {
+    font-family: "Cinzel Decorative", serif;
+}
+
+/* Header stays at the top while scrolling (position: sticky) */
+header {
+    position: sticky;
+    top: 0;
+    padding: 1rem 1.5rem;
+    background-color: var(--dark);
+}
+
+header p {
+    margin: 0 0 0.5rem;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 1.4rem;
+    color: var(--cream);
+}
+
+/* Navigation bar */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    color: var(--cream);
+}
+
+/* Main content: padding keeps text away from the edges */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--rust);
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--cream);
+}
+
+/* Skip link is hidden off-screen until focused (position: absolute) */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    color: var(--dark);
+    background-color: var(--cream);
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    padding: 0.5rem;
+}
+
+/* MEDIA QUERY: large screens put the site name and nav side by side */
+@media (min-width: 700px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header p {
+        margin: 0;
+    }
+
+    main {
+        padding: 2.5rem;
+    }
+}
