@@ -1,4 +1,4 @@
-/* home.css - styles only for index.html (form styling) */
+/* home.css */
 
 label {
     display: block;
@@ -12,8 +12,13 @@ input {
     font: inherit;
 }
 
+main img {
+    max-width: 400px;
+}
+
 button {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     font: inherit;
 }
+
