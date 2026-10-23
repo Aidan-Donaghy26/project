@@ -1,13 +1,13 @@
-/* base.css - shared styles used by ALL pages */
+/* base.css - used by ALL pages */
 
-/* Colors (fall palette) */
+/* Colors - Harry Potter themed colors */
 :root {
     --dark: #2b1d14;
     --rust: #8c3b1b;
     --cream: #f6ecd9;
 }
 
-/* Body font and page colors */
+/* font and  colors */
 body {
     margin: 0;
     font-family: "IM Fell English", serif;
@@ -17,13 +17,13 @@ body {
     color: var(--dark);
 }
 
-/* Heading font */
+/* Heading font (Deathly Hallows themed font)*/
 h1,
 h2 {
     font-family: "Cinzel Decorative", serif;
 }
 
-/* Header stays at the top while scrolling (position: sticky) */
+/* Header */
 header {
     position: sticky;
     top: 0;
@@ -38,7 +38,7 @@ header p {
     color: var(--cream);
 }
 
-/* Navigation bar */
+/* Nav bar */
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +52,6 @@ nav a {
     color: var(--cream);
 }
 
-/* Main content: padding keeps text away from the edges */
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -74,8 +73,6 @@ footer {
     background-color: var(--dark);
     color: var(--cream);
 }
-
-/* Skip link is hidden off-screen until focused (position: absolute) */
 .skip-link {
     position: absolute;
     left: -999px;
@@ -89,7 +86,6 @@ footer {
     padding: 0.5rem;
 }
 
-/* MEDIA QUERY: large screens put the site name and nav side by side */
 @media (min-width: 700px) {
     header {
         display: flex;
