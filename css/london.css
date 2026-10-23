@@ -1,4 +1,4 @@
-/* london.css - styles only for london.html (flexbox) */
+/* london.css  */
 
 .stops {
     display: flex;
@@ -8,4 +8,20 @@
 
 .stops section {
     flex: 1 1 250px;
+}
+.photos {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.photos img {
+    flex: 1;
+    min-width: 0;
+    height: 350px;
+    object-fit: cover;
+}
+
+.photos img:first-child {
+    object-position: top;
 }
